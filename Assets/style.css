@@ -1,19 +1,22 @@
 header {
-  padding: 20px;
-  background-color: #505146;
+  display: flex;
+  align-items: center;
+  background-color: #394b73;
   color: white;
 }
 
 header h1 {
-  display: inline-block;
-  padding-left: 20px;
-  font-size: 48px;
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 3rem;
 }
 
 header nav {
-  float: right;
-  margin-top: 20px;
-  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  padding-top: 4rem;
+  margin-left: 39rem;
 }
 
 header nav ul {
@@ -22,16 +25,37 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 2.5rem;
 }
 
-.decoration {
-  position: relative;
+h2 {
+  flex: 0 0 35%;
+  font-size: 2.4rem;
+  text-align: right;
+  border-right: 0.3rem solid #394b73;
+  padding-right: 2rem;
 }
 
-.decoration img {
+.banner img {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 14rem;
   object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  margin-left: 4rem;
+}
+
+.content-section {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
 }
