@@ -29,7 +29,7 @@ header nav ul li {
 }
 
 h2 {
-  flex: 0 0 35%;
+  flex: 0 0 20%;
   font-size: 2.4rem;
   text-align: right;
   border-right: 0.3rem solid #394b73;
@@ -49,13 +49,39 @@ h2 {
 }
 
 .content-section {
-  flex: 0 0 50%;
+  flex: 0 0 100%;
   display: flex;
   align-items: center;
   padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .main-content {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Flexbox for Work section of page */
+.work-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-image img {
+  width: 100%;
+}
+
+.small-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-image {
+  flex: 0 0 50%;
+}
+
+.small-image img {
+  width: 100%;
+}
+
