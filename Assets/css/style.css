@@ -30,6 +30,7 @@ header nav ul li {
 
 h2 {
   flex: 0 0 20%;
+  align-self: flex-start;
   font-size: 2.4rem;
   text-align: right;
   border-right: 0.3rem solid #394b73;
