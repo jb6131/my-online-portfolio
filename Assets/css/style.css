@@ -71,6 +71,8 @@ h2 {
 
 .large-image img {
   width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .small-images {
@@ -80,6 +82,8 @@ h2 {
 
 .small-image {
   flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .small-image img {
