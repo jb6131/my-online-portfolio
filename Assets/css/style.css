@@ -1,7 +1,15 @@
+:root {
+  --blue-metal: #394b73;
+}
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
   display: flex;
   align-items: center;
-  background-color: #394b73;
+  background-color: var(--blue-metal);
   color: white;
 }
 
@@ -12,20 +20,24 @@ header h1 {
 }
 
 header nav {
-  display: flex;
-  justify-content: flex-end;
   font-size: 1.5rem;
+  text-decoration: underline;
   padding-top: 5rem;
   margin-left: 40rem;
 }
 
 header nav ul {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
 }
 
 header nav ul li {
-  display: inline-block;
   margin-left: 2.5rem;
+}
+
+a {
+  color: inherit;
 }
 
 h2 {
@@ -33,8 +45,28 @@ h2 {
   align-self: flex-start;
   font-size: 2.4rem;
   text-align: right;
-  border-right: 0.3rem solid #394b73;
+  border-right: 0.3rem solid var(--blue-metal);
   padding-right: 2rem;
+}
+
+h3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  padding: 1rem 0.8rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background-color: var(--blue-metal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 
 .banner img {
@@ -44,16 +76,29 @@ h2 {
   object-fit: cover;
 }
 
+/* CSS for links under Contact Me */
+.contact-links nav {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline var(--blue-metal);
+}
+
+.contact-links nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
 .content {
   flex: 1;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .content-section {
   flex: 0 0 100%;
   display: flex;
   align-items: center;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
 }
 
@@ -69,10 +114,17 @@ h2 {
   align-items: center;
 }
 
-.large-image img {
-  width: 100%;
+.large-image {
+  position: relative;
+  flex: 1 0 100%;
   box-sizing: border-box;
   padding: 1rem;
+}
+
+.large-image img {
+  display: block;
+  width: 100%;
+  border: 0.5rem solid var(--blue-metal);
 }
 
 .small-images {
@@ -82,11 +134,21 @@ h2 {
 
 .small-image {
   flex: 0 0 50%;
+  position: relative;
   box-sizing: border-box;
   padding: 1rem;
 }
 
 .small-image img {
+  display: block;
   width: 100%;
+  border: 0.5rem solid var(--blue-metal);
 }
 
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  
+}
